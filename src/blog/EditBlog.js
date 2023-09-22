@@ -3,11 +3,12 @@ import { useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 
 
-const URI = 'http://localhost:8000/blogs/'
+const URI = 'http://54.211.198.119:8081/blogs/'
 
 
 const CompEditBlog = () => {
 
+    
     const [tittle, setTittle] = useState('')
     const [content, setContent] = useState('')
     const navigate = useNavigate()

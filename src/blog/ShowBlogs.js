@@ -2,9 +2,11 @@ import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-const URI = 'http://localhost:8000/blogs/'
+const URI = 'http://54.211.198.119:8081/blogs/'
 
 const CompShowBlogs = () => {
+console.log("componente show")
+
     const [blogs, setBlog] = useState([])
     useEffect(() => {
         getBlogs()
@@ -27,7 +29,7 @@ const CompShowBlogs = () => {
         <div className='container'>
             <div className='row'>
                 <div className='col'>
-                    <Link to={"/create"} className='btn btn-primary mt-2 mb-2'><i class="fa-solid fa-plus fa-shake fa-lg"></i> Crear</Link>
+                    <Link to={"/create"} className='btn btn-primary mt-2 mb-2'><i className="fa-solid fa-plus fa-shake fa-lg"></i> Crear</Link>
                     <table className='table'>
                         <thead className='table-primary'>
                             <tr>
